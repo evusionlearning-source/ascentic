@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ascentic Central Portal Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "sakura-red": "#B71C1C",
+                        "sakura-black": "#212121",
+                        "sakura-paper": "#FAFAFA",
+                        "sakura-navy": "#1a1a24",
+                        "sakura-gray": "#9E9E9E",
+                    },
+                    fontFamily: {
+                        "serif": ["Noto Serif JP", "serif"],
+                        "sans": ["Lato", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B71C1C;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-sakura-paper text-sakura-black font-sans antialiased min-h-screen flex flex-col overflow-x-hidden selection:bg-sakura-red/20 selection:text-sakura-red bg-grid bg-sakura-paper relative">
+    <header class="w-full pt-16 pb-12 flex flex-col items-center justify-center z-10 relative">
+        <div class="w-16 h-1 bg-sakura-red mb-6"></div>
+        <h1
+            class="font-serif font-black text-5xl md:text-6xl text-sakura-black tracking-widest uppercase mb-4 text-center">
+            Ascentic</h1>
+        <p class="font-serif italic text-xl text-gray-500 tracking-wide text-center">Pilih Jalur Pembelajaran Anda</p>
+    </header>
+    <main class="flex-1 px-8 pb-16 z-10">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- AMTERI -->
+                <a class="group block h-full" href="amteri.html">
+                    <article
+                        class="bg-white rounded-lg shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden flex flex-col h-full relative transform group-hover:-translate-y-2">
+                        <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-sakura-red"></div>
+                        <div class="relative h-64 w-full overflow-hidden bg-gray-100">
+                            <img alt="Modern classroom with books"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXaG9vyQFjxmR3AmmOzptjHUXiL2zZWJkHKT2pkEHhsjwdnoDqDTQb-lb7yKwU2O_D4I_kBGc2xbZD6UCr9fY618sNvX26VN7QRrm1XOIiiKnRnA1m_Oc_RzFgQYT-vglEYneyPH9zsxqgHKvxJD--5MU6Ko3hrn68WMLMs64oB3u9LkAW0mbUUjENz_892SOTvDfRAACzwmetGqaTBZ4jIEU6C-xafzBR5jLTwuPrCCDL-30KGwQ7TZCL2GVHPh1c5skwNHDsacck" />
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-sakura-red/10 flex items-center justify-center group-hover:bg-sakura-red transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-sakura-red group-hover:text-white transition-colors">menu_book</span>
+                                </div>
+                                <span
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest group-hover:text-sakura-red transition-colors">Akademik</span>
+                            </div>
+                            <h3
+                                class="font-serif font-bold text-2xl text-sakura-black mb-2 group-hover:text-sakura-red transition-colors">
+                                Amteri</h3>
+                            <p class="text-sm font-medium text-gray-800 mb-3 border-b border-gray-100 pb-3">Materi
+                                Pelajaran Sekolah</p>
+                            <div
+                                class="mt-auto pt-6 flex items-center text-sakura-red font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300">
+                                Masuk Portal <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- ALTER EGO -->
+                <a class="group block h-full" href="alter-ego.html">
+                    <article
+                        class="bg-white rounded-lg shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden flex flex-col h-full relative transform group-hover:-translate-y-2">
+                        <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-sakura-red"></div>
+                        <div class="relative h-64 w-full overflow-hidden bg-gray-100">
+                            <img alt="Mentorship session space"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRv-PLDonuaWWLC3jRKvxceJETGKaH0tONCdGqomHRShsrq9ygNt7BAE58rDPll97baVSnCjC3IRa9DNVZ1gjorIJGobcvAike_q_IQzF3_pTZnamGYmBpA-RdJkEN1ZQmYlCWeHvFJo0WgCkXzsAxzE-Sc19tVXdyhydWtKzewPSnsPIhGR7hD5Pze2rATIMZtlaQz3jPtkeLZKZKEcvUFZYBcZrWlu3N6BUk-h8JQr8DoVV-ynSri_uZ66pcEb7YobHNuLRFBPhY" />
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-sakura-red/10 flex items-center justify-center group-hover:bg-sakura-red transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-sakura-red group-hover:text-white transition-colors">diversity_3</span>
+                                </div>
+                                <span
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest group-hover:text-sakura-red transition-colors">Pengembangan</span>
+                            </div>
+                            <h3
+                                class="font-serif font-bold text-2xl text-sakura-black mb-2 group-hover:text-sakura-red transition-colors">
+                                Alter Ego</h3>
+                            <p class="text-sm font-medium text-gray-800 mb-3 border-b border-gray-100 pb-3">Pusat Kursus
+                                &amp; Mentorship</p>
+                            <div
+                                class="mt-auto pt-6 flex items-center text-sakura-red font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300">
+                                Masuk Portal <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- AOKLIB -->
+                <a class="group block h-full" href="aoklib.html">
+                    <article
+                        class="bg-white rounded-lg shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden flex flex-col h-full relative transform group-hover:-translate-y-2">
+                        <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-sakura-red"></div>
+                        <div class="relative h-64 w-full overflow-hidden bg-gray-100">
+                            <img alt="Aesthetic library books"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG_AEhmtYS5UB9CYSae37RxEJK6lI_rIU-x2ndMXq6dkBXCyc1wr1rWvU5RfE7qXLV-ZVlJCG6AAakBbyIRaOJjrCYtzoz5y14sUFaA4qC155WQto0WMDRMTtKwjpoDQLQXWAmjQQoDBVB496ZlBE_nv-UhoKxkLFlFdm6GPRr3O9tntDVMGAmSkutCUHNhcvkIJAuGQOHotrdhAchxUKPHRjmVOS8u63NdM_DJYorID5rxkqRdYhGUBVj5JEEXZfBTF_WvX-dt494" />
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-sakura-red/10 flex items-center justify-center group-hover:bg-sakura-red transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-sakura-red group-hover:text-white transition-colors">local_library</span>
+                                </div>
+                                <span
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest group-hover:text-sakura-red transition-colors">Literasi</span>
+                            </div>
+                            <h3
+                                class="font-serif font-bold text-2xl text-sakura-black mb-2 group-hover:text-sakura-red transition-colors">
+                                Aoklib</h3>
+                            <p class="text-sm font-medium text-gray-800 mb-3 border-b border-gray-100 pb-3">Perpustakaan
+                                Digital (Self-Improvement)</p>
+                            <div
+                                class="mt-auto pt-6 flex items-center text-sakura-red font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300">
+                                Masuk Portal <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- APHAM -->
+                <a class="group block h-full" href="apham.html">
+                    <article
+                        class="bg-white rounded-lg shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden flex flex-col h-full relative transform group-hover:-translate-y-2">
+                        <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-sakura-red"></div>
+                        <div class="relative h-64 w-full overflow-hidden bg-gray-100">
+                            <img alt="Competition trophy stage"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPahRCLMv68Ok53VzfZ9R467ZMq--Sp8b6hl438U4puxVJl8O5_PPjwx7iDPner4wKQubQ6c2M0WlVryT5kwZrKW1VW9S9fuyOy9GL22TMJmMVjOvAgpCn3X8JR9C5bvfPSbImv0kJUzieQf2i_lMAw7TqLN9TampddFycROXygslQW5QjCNxj---gqPFygQbK9jfMO2aoFymz32YpLOEJmyUGg8QTXnFrjtqRg1COTkyYnstI3AKYgRh-DVr0GF9mvMzIPtYmArXX" />
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-sakura-red/10 flex items-center justify-center group-hover:bg-sakura-red transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-sakura-red group-hover:text-white transition-colors">emoji_events</span>
+                                </div>
+                                <span
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest group-hover:text-sakura-red transition-colors">Prestasi</span>
+                            </div>
+                            <h3
+                                class="font-serif font-bold text-2xl text-sakura-black mb-2 group-hover:text-sakura-red transition-colors">
+                                Apham</h3>
+                            <p class="text-sm font-medium text-gray-800 mb-3 border-b border-gray-100 pb-3">Materi
+                                Khusus Kompetisi &amp; Lomba</p>
+                            <div
+                                class="mt-auto pt-6 flex items-center text-sakura-red font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300">
+                                Masuk Portal <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </div>
+        <div class="mt-20 text-center">
+            <p class="text-xs text-gray-400 font-sans tracking-widest uppercase">By AscentLab Tech</p>
+        </div>
+    </main>
+</body>
+
+</html>
